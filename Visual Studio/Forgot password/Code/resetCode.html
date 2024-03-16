@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reset Code</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="title-section">
+                <h2 class="title">Reset Your Password</h2>
+                <p class="para">Sending Reset Code Your Email, Please Check It!</p>
+            </div>
+            <form action="newPassword.html" method="POST" class="form">
+                <div class="input-group">
+                    <p id="countdown" style="font-size:medium;">Sending in...</p>
+                    <p id="otpDisplay" style="font-size:medium;"></p>
+                    <input type="code" name="Code" id="otpInput" placeholder="Enter Your Reset Code">
+                </div>
+                <div class="input-group">
+                    <button class="submit-button" type="button" id="resetButton">Send Reset code again</button>
+                </div>
+                <div class="input-group">
+                    <button class="submit-button" type="button" id="verifyButton">Verify OTP and Proceed</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
